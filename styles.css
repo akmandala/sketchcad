@@ -1,0 +1,136 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #18243b;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #d9e0ef;
+  background: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+header p {
+  margin: 0.2rem 0 0;
+  color: #496080;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: calc(100vh - 110px);
+  overflow: auto;
+}
+
+.panel section {
+  background: white;
+  border: 1px solid #d9e0ef;
+  border-radius: 10px;
+  padding: 0.9rem;
+}
+
+h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.tool-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+button,
+select,
+input {
+  border-radius: 8px;
+  border: 1px solid #c6d2ea;
+  padding: 0.45rem 0.6rem;
+  font: inherit;
+}
+
+button {
+  background: #eef3ff;
+  cursor: pointer;
+}
+
+button.active {
+  background: #325cf4;
+  border-color: #325cf4;
+  color: white;
+}
+
+button.danger {
+  width: 100%;
+  background: #fff0f0;
+  border-color: #f4b0b0;
+}
+
+.status {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+  color: #50698d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+}
+
+th,
+td {
+  border-bottom: 1px solid #edf2fd;
+  text-align: left;
+  padding: 0.35rem;
+  vertical-align: top;
+}
+
+form {
+  display: grid;
+  gap: 0.45rem;
+}
+
+label {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.canvas-wrap {
+  background: white;
+  border: 1px solid #d9e0ef;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: calc(100vh - 130px);
+  touch-action: none;
+  background-image: linear-gradient(#eef2fb 1px, transparent 1px),
+    linear-gradient(90deg, #eef2fb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
