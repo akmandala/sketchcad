@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchCAD — BoM‑backed design plans from your sketch</title>
+    <meta
+      name="description"
+      content="Drop your sketch and get a Snippet Plan built from real parts + wiring intent. Engineer-led hardware design accelerated by internal BoM‑backed snippets. Choose IPC‑aligned or ultra‑compact library standards."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="#" class="logo">SketchCAD</a>
+      <nav class="nav-links">
+        <a href="#free-snippet-plan">Free Snippet Plan</a>
+        <a href="#paid-delivery">Paid delivery</a>
+      </nav>
+      <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">BoM‑backed design decisions — starting from your sketch.</p>
+          <h1>Drop your sketch. Get a Snippet Plan built from real parts + wiring intent.</h1>
+          <p class="lead">
+            We’re an engineering‑led hardware design partner accelerated by an internal library of BoM‑backed design
+            snippets: real parts, repeatable wiring patterns, and clear implementation notes — so you don’t start from
+            a blank sheet and you don’t gamble on black‑box ‘AI auto‑design’.
+          </p>
+          <ul>
+            <li>Real components: BoM‑ready parts aligned to your supply chain (China build or Western CEM).</li>
+            <li>
+              Wiring intent included: typical topologies + constraints (buck, filtering, protection, compute support
+              blocks).
+            </li>
+            <li>Choose your library standard: IPC‑aligned or ultra‑compact.</li>
+          </ul>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
+            <p class="micro">Confidential by default. A phone photo / PDF / block diagram is enough.</p>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-placeholder" aria-label="Sketch to BoM concept banner placeholder">Hero banner placeholder</div>
+        </div>
+      </section>
+
+      <section id="free-snippet-plan" class="section card">
+        <h2>Free Snippet Plan (limited slots each week)</h2>
+        <p>
+          To start the discussion, we offer a free Snippet Plan: a practical, BoM‑backed direction for your design
+          using proven blocks and wiring intent from our internal library. We don’t provide database access — we
+          deliver the output that helps you make the next decision.
+        </p>
+        <h3>What you get</h3>
+        <ul>
+          <li>A BoM‑backed parts shortlist for key blocks (real parts, not placeholders).</li>
+          <li>
+            A short wiring‑intent paragraph per major block (how it’s typically connected + what to watch).
+          </li>
+          <li>Key assumptions + constraints captured from your sketch/spec.</li>
+          <li>Recommended next blocks (power tree, protection, connectors, etc.).</li>
+        </ul>
+        <p class="slot-line">We accept {WEEKLY_SLOTS} free Snippet Plan requests per week to keep quality high.</p>
+        <a class="btn btn-secondary" href="#drop-your-sketch">Drop your sketch</a>
+      </section>
+
+      <section id="why-this-is-different" class="section">
+        <h2>Speed comes from real‑part snippets — not generic templates.</h2>
+        <p>
+          We believe a ‘real hardware snippet’ is a collection of real parts ready for real design, plus clear
+          instructions to implement it in your CAD tool of choice. Our snippet coverage spans the blocks you reuse
+          constantly: DCDC, MCUs, sensors, drivers, battery management, wireless/modules, and common subsystems.
+        </p>
+        <ul>
+          <li>Sourcing flexibility: design can align to Nexar or LCSC ecosystems.</li>
+          <li>Density flexibility: smallest passives can target 0402, or go down to 0201 / 01005 when appropriate.</li>
+          <li>Clear implementation notes: wiring patterns + layout constraints + design intent.</li>
+        </ul>
+      </section>
+
+      <section id="paid-delivery" class="section card">
+        <h2>When you’re ready to build — we deliver the full design.</h2>
+        <p>
+          The free Snippet Plan gets your decisions grounded. Paid work turns it into build‑ready engineering outputs.
+        </p>
+        <ul>
+          <li>Supplier‑ready BoM formatting (e.g., LCSC cart‑ready export and alternates strategy)</li>
+          <li>Part library build (symbols/footprints/3D as needed)</li>
+          <li>
+            Choose your library standard: IPC‑aligned or ultra‑compact
+            <ul>
+              <li>IPC‑aligned: conservative manufacturability + standardised courtyards</li>
+              <li>Ultra‑compact: high‑density consumer/wearable style optimisation</li>
+            </ul>
+          </li>
+          <li>Full schematic capture + review loops</li>
+          <li>PCB layout + DfM handoff (density/EMI/manufacturability)</li>
+        </ul>
+        <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
+      </section>
+
+      <section id="ai-and-engineering" class="section">
+        <h2>AI helps — but shipping hardware still needs engineering.</h2>
+        <p>
+          AI can speed up parts search and iteration, but it doesn’t replace the core work: optimised layout,
+          high‑density wearables, high power density robotics, consistent library rules (DfM/IPC), and full schematic
+          review + prototyping cycles. That’s why our workflow stays engineer‑led.
+        </p>
+      </section>
+
+      <section id="drop-your-sketch" class="section card">
+        <h2>Drop your sketch to start.</h2>
+        <p>
+          Share what you have — sketch, photo, PDF, block diagram, or short spec. We’ll respond with questions and
+          confirm whether a free Snippet Plan slot is available.
+        </p>
+        <ul>
+          <li>Sketch/photo/block diagram (phone photo is fine)</li>
+          <li>Power source + rough power budget</li>
+          <li>Key interfaces (sensors, motors, cameras, RF, connectors)</li>
+          <li>Manufacturing preference (China build vs Western CEM)</li>
+        </ul>
+
+        <form name="drop-your-sketch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="drop-your-sketch" />
+          <p class="hidden">
+            <label>Don’t fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-grid">
+            <label>
+              Name (optional)
+              <input type="text" name="name" autocomplete="name" />
+            </label>
+            <label>
+              Email (required)
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              Sketch link (URL) (recommended)
+              <input type="url" name="sketch_link" placeholder="https://" />
+            </label>
+            <label>
+              Library standard
+              <select name="library_standard" required>
+                <option value="IPC-aligned">IPC‑aligned</option>
+                <option value="Ultra-compact">Ultra‑compact</option>
+                <option value="Not sure">Not sure — recommend</option>
+              </select>
+            </label>
+            <label>
+              Manufacturing preference
+              <select name="manufacturing_preference" required>
+                <option value="China build">China build (LCSC/JLC)</option>
+                <option value="Western CEM">Western CEM</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </label>
+            <label>
+              Notes / requirements
+              <textarea name="notes" rows="5" required></textarea>
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit sketch</button>
+          <p class="micro">Confidential by default. NDA available on request.</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
