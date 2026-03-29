@@ -1,136 +1,130 @@
 :root {
-  color-scheme: light;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #152238;
+  background: #eff3f9;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #f5f7fb;
-  color: #18243b;
+  background: #eff3f9;
 }
 
-header {
-  padding: 1rem 1.5rem;
-  border-bottom: 1px solid #d9e0ef;
-  background: white;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-header p {
-  margin: 0.2rem 0 0;
-  color: #496080;
-}
-
-main {
+.app {
+  height: 100vh;
   display: grid;
-  grid-template-columns: 390px 1fr;
-  gap: 1rem;
-  padding: 1rem;
+  grid-template-columns: 320px 1fr;
+  gap: 12px;
+  padding: 12px;
 }
 
-.panel {
+.chat-panel {
+  background: #ffffff;
+  border: 1px solid #d7e1f2;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 0;
+}
+
+.chat-header {
+  padding: 14px;
+  border-bottom: 1px solid #e8eefb;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.chat-header p {
+  margin: 6px 0 0;
+  color: #4d6283;
+  font-size: 0.92rem;
+}
+
+.chat-log {
+  padding: 12px;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-height: calc(100vh - 110px);
-  overflow: auto;
+  gap: 8px;
 }
 
-.panel section {
-  background: white;
-  border: 1px solid #d9e0ef;
+.message {
+  padding: 9px 10px;
   border-radius: 10px;
-  padding: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
-h2 {
-  margin: 0 0 0.6rem;
-  font-size: 1rem;
+.message.system {
+  background: #f0f5ff;
+  border: 1px solid #d9e4ff;
 }
 
-.tool-row {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  margin-bottom: 0.6rem;
+.message.user {
+  background: #e8fff4;
+  border: 1px solid #c6f2dd;
+  margin-left: 18px;
+}
+
+.chat-actions,
+.chat-form {
+  padding: 10px;
+  border-top: 1px solid #e8eefb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 
 button,
-select,
 input {
-  border-radius: 8px;
-  border: 1px solid #c6d2ea;
-  padding: 0.45rem 0.6rem;
   font: inherit;
+  border: 1px solid #bfd0eb;
+  border-radius: 8px;
+  padding: 9px 10px;
 }
 
 button {
-  background: #eef3ff;
+  background: #f2f6ff;
   cursor: pointer;
 }
 
-button.active {
-  background: #325cf4;
-  border-color: #325cf4;
+button.primary {
+  background: #2453ea;
   color: white;
+  border-color: #2453ea;
 }
 
-button.danger {
-  width: 100%;
-  background: #fff0f0;
-  border-color: #f4b0b0;
+.chat-form {
+  grid-template-columns: 1fr auto;
 }
 
-.status {
-  margin: 0.4rem 0 0;
-  font-size: 0.9rem;
-  color: #50698d;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.83rem;
-}
-
-th,
-td {
-  border-bottom: 1px solid #edf2fd;
-  text-align: left;
-  padding: 0.35rem;
-  vertical-align: top;
-}
-
-form {
-  display: grid;
-  gap: 0.45rem;
-}
-
-label {
-  display: grid;
-  gap: 0.2rem;
-  font-size: 0.85rem;
-}
-
-.canvas-wrap {
+.canvas-stage {
+  position: relative;
   background: white;
-  border: 1px solid #d9e0ef;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid #d7e1f2;
+  border-radius: 12px;
   overflow: hidden;
 }
 
 canvas {
   width: 100%;
-  height: calc(100vh - 130px);
+  height: 100%;
   touch-action: none;
-  background-image: linear-gradient(#eef2fb 1px, transparent 1px),
-    linear-gradient(90deg, #eef2fb 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: linear-gradient(#edf1fb 1px, transparent 1px),
+    linear-gradient(90deg, #edf1fb 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.floating-helper {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: #ffffff;
 }

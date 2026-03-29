@@ -3,113 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SketchCAD Prototype</title>
+    <title>SketchCAD</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>SketchCAD Prototype</h1>
-      <p>Sketch electronics blocks with a stylus, auto-convert to clean symbols, then wire them.</p>
-    </header>
+    <main class="app">
+      <aside class="chat-panel">
+        <div class="chat-header">
+          <h1>SketchCAD</h1>
+          <p>Sketch electronics blocks, let LLM understand your diagram, and generate a design snippet.</p>
+        </div>
 
-    <main>
-      <aside class="panel">
-        <section>
-          <h2>Tools</h2>
-          <div class="tool-row">
-            <button id="drawModeBtn" class="active">Draw Mode</button>
-            <button id="connectModeBtn">Connect Mode</button>
-          </div>
-          <div class="tool-row">
-            <label for="wireType">Wire Type</label>
-            <select id="wireType">
-              <option>USB</option>
-              <option>SPI</option>
-              <option>I2C</option>
-              <option>UART</option>
-              <option>Power Rail</option>
-            </select>
-          </div>
-          <button id="clearBtn" class="danger">Clear Diagram</button>
-          <p id="status" class="status">Draw a closed shape (box, circle, triangle) to create a block.</p>
-        </section>
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
 
-        <section>
-          <h2>Suggested symbol dictionary (5 easy shapes)</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Sketch shape</th>
-                <th>Symbol</th>
-                <th>Typical metadata</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rectangle</td>
-                <td>DCDC Converter</td>
-                <td>Vin range, Vout, Imax</td>
-              </tr>
-              <tr>
-                <td>Circle</td>
-                <td>MCU Controller</td>
-                <td>Part number, voltage, interfaces</td>
-              </tr>
-              <tr>
-                <td>Triangle</td>
-                <td>Amplifier / Driver</td>
-                <td>Gain, power, channels</td>
-              </tr>
-              <tr>
-                <td>Tall rectangle</td>
-                <td>Battery &amp; Power Mgmt</td>
-                <td>Chemistry, capacity, protection</td>
-              </tr>
-              <tr>
-                <td>Rounded box</td>
-                <td>Network Interface</td>
-                <td>Bus type, PHY, connector</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <div class="chat-actions">
+          <button id="analyzeBtn">Analyze Sketch</button>
+          <button id="snippetBtn" class="primary">Generate Design Snippet</button>
+        </div>
 
-        <section>
-          <h2>Selected component</h2>
-          <form id="componentForm">
-            <label>
-              Symbol
-              <select id="symbolType">
-                <option>DCDC Converter</option>
-                <option>MCU Controller</option>
-                <option>Network Interface</option>
-                <option>Motor Driver</option>
-                <option>Battery &amp; Power Mgmt</option>
-              </select>
-            </label>
-            <label>
-              Label
-              <input id="labelInput" type="text" placeholder="e.g. DCDC_5V" />
-            </label>
-            <label>
-              Vin range
-              <input id="vinInput" type="text" placeholder="e.g. 9-36V" />
-            </label>
-            <label>
-              Vout
-              <input id="voutInput" type="text" placeholder="e.g. 5V" />
-            </label>
-            <label>
-              Imax
-              <input id="imaxInput" type="text" placeholder="e.g. 3A" />
-            </label>
-            <button type="submit">Update component</button>
-          </form>
-        </section>
+        <form id="chatForm" class="chat-form">
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Ask about your design (e.g. Add SPI between MCU and Motor Driver)"
+          />
+          <button type="submit">Send</button>
+        </form>
       </aside>
 
-      <section class="canvas-wrap">
-        <canvas id="diagramCanvas" width="1200" height="760"></canvas>
+      <section class="canvas-stage">
+        <canvas id="diagramCanvas" width="1280" height="760"></canvas>
+        <button id="symbolHelperBtn" class="floating-helper" title="Symbol helper (placeholder)">
+          Symbol Helper
+        </button>
       </section>
     </main>
 
