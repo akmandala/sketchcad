@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchCAD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <aside class="chat-panel">
+        <div class="chat-header">
+          <h1>SketchCAD</h1>
+          <p>Sketch electronics blocks, let LLM understand your diagram, and generate a design snippet.</p>
+        </div>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <div class="chat-actions">
+          <button id="analyzeBtn">Analyze Sketch</button>
+          <button id="snippetBtn" class="primary">Generate Design Snippet</button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Ask about your design (e.g. Add SPI between MCU and Motor Driver)"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </aside>
+
+      <section class="canvas-stage">
+        <canvas id="diagramCanvas" width="1280" height="760"></canvas>
+        <button id="symbolHelperBtn" class="floating-helper" title="Symbol helper (placeholder)">
+          Symbol Helper
+        </button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

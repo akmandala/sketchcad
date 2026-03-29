@@ -1,0 +1,130 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #152238;
+  background: #eff3f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eff3f9;
+}
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 12px;
+  padding: 12px;
+}
+
+.chat-panel {
+  background: #ffffff;
+  border: 1px solid #d7e1f2;
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 0;
+}
+
+.chat-header {
+  padding: 14px;
+  border-bottom: 1px solid #e8eefb;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.chat-header p {
+  margin: 6px 0 0;
+  color: #4d6283;
+  font-size: 0.92rem;
+}
+
+.chat-log {
+  padding: 12px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.message {
+  padding: 9px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.message.system {
+  background: #f0f5ff;
+  border: 1px solid #d9e4ff;
+}
+
+.message.user {
+  background: #e8fff4;
+  border: 1px solid #c6f2dd;
+  margin-left: 18px;
+}
+
+.chat-actions,
+.chat-form {
+  padding: 10px;
+  border-top: 1px solid #e8eefb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+button,
+input {
+  font: inherit;
+  border: 1px solid #bfd0eb;
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+
+button {
+  background: #f2f6ff;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2453ea;
+  color: white;
+  border-color: #2453ea;
+}
+
+.chat-form {
+  grid-template-columns: 1fr auto;
+}
+
+.canvas-stage {
+  position: relative;
+  background: white;
+  border: 1px solid #d7e1f2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  background-image: linear-gradient(#edf1fb 1px, transparent 1px),
+    linear-gradient(90deg, #edf1fb 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.floating-helper {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: #ffffff;
+}
