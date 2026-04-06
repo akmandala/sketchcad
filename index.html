@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SketchCAD — BoM‑backed design plans from your sketch</title>
+    <title>SketchCAD — Production‑ready Altium part libraries for wearables, mobiles, and micro‑robotics</title>
     <meta
       name="description"
-      content="Drop your sketch and get a Snippet Plan built from real parts + wiring intent. Engineer-led hardware design accelerated by internal BoM‑backed snippets. Choose IPC‑aligned or ultra‑compact library standards."
+      content="Highly consistent symbols + footprints + accurate 3D + metadata. Choose IPC‑aligned or ultra‑compact. Availability-aware: Nexar‑first or LCSC‑first."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -14,115 +14,212 @@
     <header class="topbar">
       <a href="#" class="logo">SketchCAD</a>
       <nav class="nav-links">
-        <a href="#free-snippet-plan">Free Snippet Plan</a>
-        <a href="#paid-delivery">Paid delivery</a>
+        <a href="#what-you-get">What you get</a>
+        <a href="#standards">Standards</a>
+        <a href="#availability">Availability</a>
+        <a href="#how-we-deliver">How we deliver</a>
       </nav>
-      <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
+      <a class="btn btn-primary" href="#drop-your-bom">Drop your BoM</a>
     </header>
 
     <main>
       <section class="hero section">
         <div class="hero-copy">
-          <p class="eyebrow">BoM‑backed design decisions — starting from your sketch.</p>
-          <h1>Drop your sketch. Get a Snippet Plan built from real parts + wiring intent.</h1>
+          <p class="eyebrow">Foundation of a great product starts at the component library.</p>
+          <h1>Production‑ready part libraries for wearables, mobiles, and micro‑robotics.</h1>
           <p class="lead">
-            We’re an engineering‑led hardware design partner accelerated by an internal library of BoM‑backed design
-            snippets: real parts, repeatable wiring patterns, and clear implementation notes — so you don’t start from
-            a blank sheet and you don’t gamble on black‑box ‘AI auto‑design’.
+            Highly consistent symbols + footprints + accurate 3D + metadata — built for space‑constrained, high
+            performance, high power‑density hardware.
+          </p>
+          <p>
+            We deliver highly consistent, production‑ready part libraries for space‑constrained, high power‑density,
+            high performance products (wearables, mobiles, micro‑robotics).
+          </p>
+          <p class="slot-line">
+            Choose your library standard: IPC‑aligned or ultra‑compact (mobile / micro‑robotics / wearable density).
           </p>
           <ul>
-            <li>Real components: BoM‑ready parts aligned to your supply chain (China build or Western CEM).</li>
+            <li>Consistency: strict symbol style, pin conventions, naming rules, parameters, and 3D alignment</li>
             <li>
-              Wiring intent included: typical topologies + constraints (buck, filtering, protection, compute support
-              blocks).
+              Completeness: symbols, footprints, accurate 3D, SiliconExpert fields (where available/licensed), and
+              alternates‑ready metadata
             </li>
-            <li>Choose your library standard: IPC‑aligned or ultra‑compact.</li>
+            <li>
+              Availability-aware: your library can be Nexar‑first or LCSC‑first — we structure parts and alternates
+              for the ecosystem you build around
+            </li>
           </ul>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
-            <p class="micro">Confidential by default. A phone photo / PDF / block diagram is enough.</p>
+          <div class="hero-cta two-cta">
+            <a class="btn btn-primary" href="#drop-your-bom">Drop your main part list / BoM</a>
+            <a class="btn btn-secondary" href="#drop-your-bom">Or send a hand sketch</a>
           </div>
+          <p class="micro">Confidential by default. NDA available.</p>
         </div>
         <div class="hero-image-wrap">
-          <div class="hero-image-placeholder" aria-label="Sketch to BoM concept banner placeholder">Hero banner placeholder</div>
+          <div class="hero-image-placeholder" aria-label="Part library delivery banner placeholder">
+            Production‑ready Altium part library delivery
+          </div>
         </div>
       </section>
 
-      <section id="free-snippet-plan" class="section card">
-        <h2>Free Snippet Plan (limited slots each week)</h2>
+      <section id="why-libraries-matter" class="section card">
+        <h2>Electronics products start with component‑level consistency and accuracy.</h2>
         <p>
-          To start the discussion, we offer a free Snippet Plan: a practical, BoM‑backed direction for your design
-          using proven blocks and wiring intent from our internal library. We don’t provide database access — we
-          deliver the output that helps you make the next decision.
+          Before a schematic is ‘correct’ and long before a PCB is manufacturable, the project is already shaped by the
+          part library: pin intent, footprint accuracy, orientation conventions, metadata quality, alternates strategy,
+          and 3D correctness.
         </p>
-        <h3>What you get</h3>
+        <p>
+          A production‑ready library is not ‘admin work.’ It’s the foundation that keeps dense, high‑performance
+          products stable as requirements change and builds scale.
+        </p>
+        <p>When the library is inconsistent, the team pays for it everywhere:</p>
         <ul>
-          <li>A BoM‑backed parts shortlist for key blocks (real parts, not placeholders).</li>
+          <li>Schematic errors (wrong pins, swapped nets, unclear power pins)</li>
+          <li>PCB rework (wrong footprint, polarity/orientation mismatches, courtyard conflicts)</li>
           <li>
-            A short wiring‑intent paragraph per major block (how it’s typically connected + what to watch).
+            Mechanical surprises (incorrect 3D height/origin/rotation, connector clashes, enclosure collisions)
           </li>
-          <li>Key assumptions + constraints captured from your sketch/spec.</li>
-          <li>Recommended next blocks (power tree, protection, connectors, etc.).</li>
+          <li>Assembly ambiguity (inconsistent reference orientation, missing fields, unclear substitutions)</li>
+          <li>Procurement friction (missing MPNs, alternates not prepared, lifecycle blind spots)</li>
+          <li>Respins and delays (the most expensive kind of ‘bug’)</li>
         </ul>
-        <p class="slot-line">We accept {WEEKLY_SLOTS} free Snippet Plan requests per week to keep quality high.</p>
-        <a class="btn btn-secondary" href="#drop-your-sketch">Drop your sketch</a>
+        <p class="micro">
+          Accurate 3D + consistent conventions mean you can push space‑constrained layouts to the limit with confidence
+          — fit and clearances don’t become last‑minute surprises.
+        </p>
       </section>
 
-      <section id="why-this-is-different" class="section">
-        <h2>Speed comes from real‑part snippets — not generic templates.</h2>
+      <section id="what-you-get" class="section">
+        <h2>What you receive</h2>
         <p>
-          We believe a ‘real hardware snippet’ is a collection of real parts ready for real design, plus clear
-          instructions to implement it in your CAD tool of choice. Our snippet coverage spans the blocks you reuse
-          constantly: DCDC, MCUs, sensors, drivers, battery management, wireless/modules, and common subsystems.
+          A complete, Altium‑ready library package designed for density, consistency, and manufacturing handoff.
         </p>
         <ul>
-          <li>Sourcing flexibility: design can align to Nexar or LCSC ecosystems.</li>
-          <li>Density flexibility: smallest passives can target 0402, or go down to 0201 / 01005 when appropriate.</li>
-          <li>Clear implementation notes: wiring patterns + layout constraints + design intent.</li>
-        </ul>
-      </section>
-
-      <section id="paid-delivery" class="section card">
-        <h2>When you’re ready to build — we deliver the full design.</h2>
-        <p>
-          The free Snippet Plan gets your decisions grounded. Paid work turns it into build‑ready engineering outputs.
-        </p>
-        <ul>
-          <li>Supplier‑ready BoM formatting (e.g., LCSC cart‑ready export and alternates strategy)</li>
-          <li>Part library build (symbols/footprints/3D as needed)</li>
+          <li>Symbols — consistent visuals, pin naming rules, pin grouping, and readable schematic intent</li>
           <li>
-            Choose your library standard: IPC‑aligned or ultra‑compact
+            Footprints — polarity/orientation conventions, density-aware courtyard strategy, and manufacturable land
+            patterns
+          </li>
+          <li>
+            Accurate 3D representation — consistent origin/rotation/height so enclosure fit and stacking checks are
+            reliable
+          </li>
+          <li>
+            Metadata completeness — structured procurement and lifecycle fields (including SiliconExpert fields where
+            available/licensed)
+          </li>
+          <li>
+            Alternates‑ready fields — approved substitutions prepared upfront so purchasing doesn’t create chaos later
+          </li>
+          <li>
+            Library governance (optional) — naming rules + parameter templates so the library stays clean as the design
+            evolves
+          </li>
+        </ul>
+      </section>
+
+      <section id="standards" class="section card">
+        <h2>IPC‑aligned or ultra‑compact — your choice</h2>
+        <p class="slot-line">Choose your library standard: IPC‑aligned or ultra‑compact.</p>
+        <div class="standards-grid">
+          <article class="mini-card">
+            <h3>IPC‑aligned (predictable manufacturability)</h3>
             <ul>
-              <li>IPC‑aligned: conservative manufacturability + standardised courtyards</li>
-              <li>Ultra‑compact: high‑density consumer/wearable style optimisation</li>
+              <li>Conservative, audit-friendly footprint strategy</li>
+              <li>Optimised for repeatable builds across multiple CEMs</li>
+              <li>Great for teams that want strict standardisation and reviewability</li>
             </ul>
-          </li>
-          <li>Full schematic capture + review loops</li>
-          <li>PCB layout + DfM handoff (density/EMI/manufacturability)</li>
-        </ul>
-        <a class="btn btn-primary" href="#drop-your-sketch">Drop your sketch</a>
+          </article>
+          <article class="mini-card">
+            <h3>Ultra‑compact (mobile / wearable / micro‑robotics density)</h3>
+            <ul>
+              <li>Density‑optimised footprint strategy for tight enclosures and high power density</li>
+              <li>Consistent orientation rules for high‑volume assembly workflows</li>
+              <li>Built for products where space and routing constraints dominate</li>
+            </ul>
+          </article>
+        </div>
+        <p>Same consistency discipline — different DfM target.</p>
       </section>
 
-      <section id="ai-and-engineering" class="section">
-        <h2>AI helps — but shipping hardware still needs engineering.</h2>
+      <section id="availability" class="section">
+        <h2>Availability‑aware libraries: Nexar‑first or LCSC‑first</h2>
         <p>
-          AI can speed up parts search and iteration, but it doesn’t replace the core work: optimised layout,
-          high‑density wearables, high power density robotics, consistent library rules (DfM/IPC), and full schematic
-          review + prototyping cycles. That’s why our workflow stays engineer‑led.
-        </p>
-      </section>
-
-      <section id="drop-your-sketch" class="section card">
-        <h2>Drop your sketch to start.</h2>
-        <p>
-          Share what you have — sketch, photo, PDF, block diagram, or short spec. We’ll respond with questions and
-          confirm whether a free Snippet Plan slot is available.
+          Our internal BoM snippet database doesn’t just store CAD assets — it stores repeatable part selection
+          patterns, alternates structures, and metadata templates. We can tune your library to prioritise the
+          availability ecosystem you build around.
         </p>
         <ul>
-          <li>Sketch/photo/block diagram (phone photo is fine)</li>
-          <li>Power source + rough power budget</li>
-          <li>Key interfaces (sensors, motors, cameras, RF, connectors)</li>
-          <li>Manufacturing preference (China build vs Western CEM)</li>
+          <li>
+            Nexar‑first — prioritise broad distributor visibility and lifecycle signals; alternates structured for
+            continuity
+          </li>
+          <li>
+            LCSC‑first — prioritise high availability for China builds; fields prepared for fast purchasing workflows
+          </li>
+          <li>
+            Hybrid — prefer one ecosystem but keep approved alternates mapped to the other for resilience
+          </li>
+        </ul>
+        <p class="micro">
+          We can’t control inventory — but we design for availability: clean alternates strategy, consistent metadata,
+          and substitution-ready structure.
+        </p>
+      </section>
+
+      <section id="how-we-deliver" class="section card">
+        <h2>Fast delivery without breaking consistency</h2>
+        <p>
+          Speed comes from doing the repetitive work once, correctly — then enforcing standards at scale.
+        </p>
+        <p>We deliver quickly because:</p>
+        <ul>
+          <li>
+            We use internal curated patterns (packages, pin rules, parameter templates, 3D alignment conventions)
+          </li>
+          <li>
+            We use automation/AI to accelerate repeatable steps (normalisation, field completion, consistency checks)
+          </li>
+          <li>
+            Engineers validate the edge cases (connectors, unusual geometry, polarity‑sensitive parts, dense
+            footprints)
+          </li>
+        </ul>
+        <p class="slot-line">
+          Fast‑track delivery is available — as fast as a few hours for a small, well‑scoped batch. Larger libraries
+          depend on part count and custom geometry.
+        </p>
+      </section>
+
+      <section id="complementary" class="section">
+        <h2>Complementary (optional)</h2>
+        <p>If you want to go beyond the library, we can also deliver:</p>
+        <ul>
+          <li>BoM cleanup + alternates strategy (supplier‑ready structure)</li>
+          <li>Schematic capture (using the same library rules)</li>
+          <li>PCB layout for dense products (space constraints, power density, manufacturability)</li>
+          <li>
+            Hardware‑in‑the‑Loop (HIL) validation for high‑power and/or compute‑dense products (motor control, power
+            management, fault handling, performance under realistic load conditions)
+          </li>
+        </ul>
+      </section>
+
+      <section id="drop-your-bom" class="section card">
+        <h2>Drop your main part list / BoM — or send a sketch to start.</h2>
+        <p>
+          Send your BoM (CSV/XLSX or a list of MPNs). If you’re earlier stage, send a sketch and constraints. We’ll
+          reply with clarifying questions, recommend a library standard (IPC‑aligned or ultra‑compact), and confirm the
+          best availability profile (Nexar‑first or LCSC‑first).
+        </p>
+        <ul>
+          <li>BoM / part list (MPNs) or sketch/block diagram</li>
+          <li>Target product type (wearable / mobile / micro‑robotics)</li>
+          <li>Space constraint notes (board outline, height limits, connector constraints)</li>
+          <li>Preferred availability profile: Nexar‑first / LCSC‑first / Hybrid</li>
+          <li>Library standard: IPC‑aligned / Ultra‑compact / Not sure</li>
+          <li>Any house rules (naming conventions, symbol style guide, parameter requirements)</li>
         </ul>
 
         <form name="drop-your-sketch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -133,43 +230,53 @@
 
           <div class="form-grid">
             <label>
-              Name (optional)
-              <input type="text" name="name" autocomplete="name" />
-            </label>
-            <label>
               Email (required)
               <input type="email" name="email" required autocomplete="email" />
             </label>
             <label>
-              Sketch link (URL) (recommended)
-              <input type="url" name="sketch_link" placeholder="https://" />
+              Upload/link BoM OR paste MPN list (URL)
+              <input type="url" name="bom_link" placeholder="https://" />
+            </label>
+            <label>
+              MPN list (textarea)
+              <textarea name="mpn_list" rows="4"></textarea>
             </label>
             <label>
               Library standard
               <select name="library_standard" required>
                 <option value="IPC-aligned">IPC‑aligned</option>
                 <option value="Ultra-compact">Ultra‑compact</option>
-                <option value="Not sure">Not sure — recommend</option>
-              </select>
-            </label>
-            <label>
-              Manufacturing preference
-              <select name="manufacturing_preference" required>
-                <option value="China build">China build (LCSC/JLC)</option>
-                <option value="Western CEM">Western CEM</option>
                 <option value="Not sure">Not sure</option>
               </select>
             </label>
             <label>
-              Notes / requirements
-              <textarea name="notes" rows="5" required></textarea>
+              Availability profile
+              <select name="availability_profile" required>
+                <option value="Nexar-first">Nexar‑first</option>
+                <option value="LCSC-first">LCSC‑first</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </label>
+            <label>
+              Notes / constraints
+              <textarea name="notes" rows="5"></textarea>
+            </label>
+            <label>
+              Optional: target CEM / manufacturing notes (optional)
+              <input type="text" name="target_cem" />
             </label>
           </div>
 
-          <button class="btn btn-primary" type="submit">Submit sketch</button>
+          <button class="btn btn-primary" type="submit">Submit BoM / Sketch</button>
           <p class="micro">Confidential by default. NDA available on request.</p>
         </form>
       </section>
     </main>
+
+    <footer class="footer">
+      SketchCAD — Production‑ready Altium part libraries for wearables, mobiles, and micro‑robotics. IPC‑aligned or
+      ultra‑compact. Nexar‑first or LCSC‑first.
+    </footer>
   </body>
 </html>

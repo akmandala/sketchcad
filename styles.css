@@ -207,4 +207,38 @@ button {
   .form-grid {
     grid-template-columns: 1fr;
   }
+
+  .standards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.two-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.standards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.mini-card {
+  background: #f8faff;
+  border: 1px solid #d7e1f2;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.footer {
+  max-width: 1080px;
+  margin: 0 auto 24px;
+  padding: 0 20px;
+  color: #4f6486;
+  font-size: 0.9rem;
 }
