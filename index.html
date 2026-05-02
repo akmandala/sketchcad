@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchCAD — Deterministic Content Cart packs for miniature electronics</title>
+    <meta
+      name="description"
+      content="Build Content Cart packs for mobile, wearables, and micro‑robotics with deterministic footprint naming, compact descriptions, and Nexar-based availability signals. Try the platform or hire contractors for full delivery."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="#" class="logo">SketchCAD</a>
+      <nav class="nav-links">
+        <a href="#packs">Packs</a>
+        <a href="#the-standard">The standard</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#contractors">Contractors</a>
+      </nav>
+      <a class="btn btn-primary" href="https://bomparser.netlify.app/" target="_blank" rel="noreferrer">Try our platform</a>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Ultra‑dense libraries with deterministic naming.</p>
+          <h1>Build Content Cart packs for miniature electronics — with deterministic footprint names and structured descriptions.</h1>
+          <p class="lead">
+            SketchCAD standardizes the foundation for mobile, wearables, and micro‑robotics. We turn exact part numbers into consistent Altium‑ready content using a strict standard based on maximum physical dimensions — then package it into reusable Content Cart packs.
+          </p>
+          <ul>
+            <li>Deterministic naming from MPN + optional datasheet (max body L×W×H encoded into the footprint name).</li>
+            <li>Compact Altium descriptions under 256 characters (lifecycle/compliance/stock do not belong in Description).</li>
+            <li>Availability‑aware: packs are based on Nexar popular stock at the time you generate the pack.</li>
+          </ul>
+          <div class="hero-cta two-cta">
+            <a class="btn btn-primary" href="https://bomparser.netlify.app/" target="_blank" rel="noreferrer">Try our platform</a>
+            <a class="btn btn-secondary" href="TBD_MARKETPLACE_URL">Contractor marketplace</a>
+            <a class="inline-link" href="#packs">Browse packs</a>
+          </div>
+          <p class="micro">Manufacturer pages/datasheets first. If evidence is incomplete, we flag it for review instead of guessing.</p>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-placeholder" aria-label="Content cart packs placeholder">Deterministic Content Cart packs for miniature electronics</div>
+        </div>
+      </section>
+
+      <section id="packs" class="section card">
+        <h2>Content Cart Packs</h2>
+        <p>Get a ready‑to‑use foundation pack, generate a circuit pack from a requirement, or build your own pack from exact MPNs. Every pack follows the same deterministic naming and description rules.</p>
+
+        <h3>Pack A: Foundation Packs (miniature design essentials)</h3>
+        <p>Curated ‘miniature design essentials’ built to the naming/description rules — the baseline library you can reuse across projects.</p>
+        <ul>
+          <li>0201 / 0402 passive sets (E24 / E96 starter ranges)</li>
+          <li>Miniature ferrite bead and TVS protection sets</li>
+          <li>Common ultra‑miniature B2B connector sets</li>
+        </ul>
+
+        <h3>Pack B: Circuit Packs (subcircuit kits)</h3>
+        <p>Search a requirement like ‘1A DCDC with 5V input’ and receive 5 candidate IC options. Upon selection, it will present:</p>
+        <ul>
+          <li>the main part + all supporting parts required to build the subcircuit (decoupling, passives, protection as needed)</li>
+          <li>consistent names/descriptions, and wiring intent notes</li>
+        </ul>
+
+        <h3>Pack C: Build‑your‑own pack (exact MPN list)</h3>
+        <p>Paste your exact MPNs one by one that you need:</p>
+        <ul>
+          <li>We generate deterministic footprint names and structured descriptions.</li>
+          <li>We can also suggest supporting parts from our database to complete buildable blocks (optional).</li>
+          <li>You add to Content Cart list → we deliver the pack.</li>
+        </ul>
+
+        <div class="two-cta">
+          <a class="btn btn-primary" href="https://bomparser.netlify.app/" target="_blank" rel="noreferrer">Try our platform</a>
+          <a class="btn btn-secondary" href="TBD_MARKETPLACE_URL">Contractor marketplace</a>
+        </div>
+      </section>
+
+      <section id="the-standard" class="section">
+        <h2>The standard is the product</h2>
+        <p>Ultra‑dense design fails when every engineer names parts differently. SketchCAD enforces a deterministic footprint naming and description system so content stays consistent across teams, projects, and contractors.</p>
+        <ul>
+          <li>Footprint names encode maximum physical dimensions whenever available.</li>
+          <li>Descriptions stay compact and practical (≤256 characters).</li>
+          <li>Ambiguity is explicitly flagged for review.</li>
+        </ul>
+        <p class="micro">Example: CAP_0402_1uF_10V_X5R_1.0x0.5x0.5mm · Description kept compact, technical, and parser-friendly.</p>
+        <a class="btn btn-primary" href="https://bomparser.netlify.app/" target="_blank" rel="noreferrer">Try the Parser Plan platform</a>
+      </section>
+
+      <section id="coverage" class="section card">
+        <h2>What the central catalog covers (and what contractors handle)</h2>
+        <p>Our central Content Cart catalog focuses on parts that show up repeatedly in miniature designs and can be standardized safely.</p>
+        <h3>In scope (central packs)</h3>
+        <ul>
+          <li>Passives & protection (RES/CAP/IND, ferrites, TVS, ESD)</li>
+          <li>Common IC packages (QFN/DFN/SOT/SOD/SOP etc.)</li>
+          <li>Ultra‑miniature connectors commonly used in small devices (B2B/FPC sets)</li>
+          <li>Other miniature‑friendly components as the catalog grows</li>
+        </ul>
+        <h3>Out of scope (contractors)</h3>
+        <ul>
+          <li>Push buttons and specialized electromechanical UI parts</li>
+          <li>Non‑chip LEDs, displays, bespoke mechanical parts</li>
+          <li>Anything not typical for miniature design foundations</li>
+        </ul>
+        <a class="btn btn-secondary" href="TBD_MARKETPLACE_URL">Need out‑of‑scope parts?</a>
+      </section>
+
+      <section id="contractors" class="section">
+        <h2>Contractors can take you from packs → full manufacturable designs</h2>
+        <p>If you need more than content, contractors can deliver end‑to‑end Altium work using the same naming and description rules.</p>
+        <ul>
+          <li>Build out-of-scope parts and custom components</li>
+          <li>Full schematic capture + PCB layout</li>
+          <li>Manufacturable design packs and release outputs</li>
+          <li>Prototype-ready outputs for common flows (e.g., JLCPCB / CircuitHub-style prototypes)</li>
+        </ul>
+        <a class="btn btn-primary" href="TBD_MARKETPLACE_URL">Go to contractor marketplace</a>
+      </section>
+
+      <section id="get-started" class="section card">
+        <h2>Drop your sketch or MPN list — we’ll route you to packs or contractors</h2>
+        <p>If you can’t self‑serve yet, send your MPN list, a sketch, or requirements. We’ll reply with next steps: use the platform, request a custom pack, or post to contractors.</p>
+
+        <div class="two-cta">
+          <a class="btn btn-primary" href="https://bomparser.netlify.app/" target="_blank" rel="noreferrer">Try our platform</a>
+          <a class="btn btn-secondary" href="TBD_MARKETPLACE_URL">Contractor marketplace</a>
+        </div>
+
+        <form name="drop-your-sketch" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="drop-your-sketch" />
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div class="form-grid">
+            <label>
+              Email (required)
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>
+              Request type
+              <select name="request_type" required>
+                <option>Pack A — Foundation Pack request</option>
+                <option>Pack B — Circuit Pack request</option>
+                <option>Pack C — Build my pack from MPN list</option>
+                <option>Full design / manufacturable pack (contractor)</option>
+              </select>
+            </label>
+            <label>
+              MPN list / BoM link / sketch link
+              <textarea name="input_data" rows="5" required></textarea>
+            </label>
+            <label>
+              Notes (optional)
+              <textarea name="notes" rows="4"></textarea>
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send request</button>
+          <p class="micro">Confidential by default. NDA available on request.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      SketchCAD — Deterministic Content Cart packs for miniature electronics.
+    </footer>
+  </body>
+</html>
